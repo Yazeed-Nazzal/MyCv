@@ -11,7 +11,7 @@
         <div class="Navigation-List">
           <ul class=" d-flex justify-start">
             <li @click="Open('.About')" class="" data-name=".About" style="cursor: pointer">About</li>
-            <li class="">Resume</li>
+            <li @click="Open('.Resume')" class="" style="cursor: pointer">Resume</li>
             <li class="">Portfolio</li>
             <li class="">Blog</li>
             <li class="">Contact</li>
@@ -22,8 +22,8 @@
         </div>
         <div class="Mobile-Nav mt-2">
           <ul>
-            <li class="">About</li>
-            <li class="">Resume</li>
+            <li @click="Open('.About')"   style="cursor: pointer">About</li>
+            <li @click="Open('.Resume')"  style="cursor: pointer">Resume</li>
             <li class="">Portfolio</li>
             <li class="">Blog</li>
             <li style="margin-bottom: 0px" >Contact</li>
@@ -37,6 +37,14 @@
 <script>
 import $ from "jquery";
 export default {
+
+  created() {
+    $(window).resize(function(){
+
+      $('.Mobile-Nav').css('display','none');
+
+    });
+  },
   methods : {
     Open (e) {
       $(e).css("opacity","1");
@@ -60,6 +68,7 @@ export default {
   width: 100%;
   color: #e6e6e6;
   z-index: 100;
+
 }
 .Logo-Box i {
   font-size: 60px;
