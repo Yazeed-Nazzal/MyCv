@@ -1,5 +1,5 @@
 <template>
-  <div class="Home">
+  <section class="Home">
     <div class="Opacity-box">
       <div class="container text-center h-100">
         <div class="row h-100 d-flex align-items-center justify-content-center">
@@ -42,24 +42,26 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 import $ from "jquery";
-
 export default {
-  methods: {},
+  methods: {
+
+
+  },
   mounted() {
     setInterval(function() {
-      $(".Animated-span").animate({ width: "0px" }, 1000, function() {
+      $(".Animated-span").animate({ width: "0px" }, 1250, function() {
         $(".front")
           .toggleClass("Visable")
           .toggleClass("notVisable");
         $(".back")
           .toggleClass("Visable")
           .toggleClass("notVisable");
-        $(".Animated-span").animate({ width: "140px" }, 1000);
+        $(".Animated-span").animate({ width: "140px" }, 1250);
       });
     }, 2500);
   },
@@ -71,9 +73,9 @@ export default {
   background-image: url("../assets/home.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   width: 100%;
   color: #fff;
+  z-index: 99;
 }
 .Home a {
   color: white;

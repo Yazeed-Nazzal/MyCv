@@ -10,7 +10,7 @@
       <div>
         <div class="Navigation-List">
           <ul class=" d-flex justify-start">
-            <li class="">About</li>
+            <li @click="Open('.About')" class="" data-name=".About" style="cursor: pointer">About</li>
             <li class="">Resume</li>
             <li class="">Portfolio</li>
             <li class="">Blog</li>
@@ -38,6 +38,11 @@
 import $ from "jquery";
 export default {
   methods : {
+    Open (e) {
+      $(e).css("opacity","1");
+      $(e).css("z-index","99999");
+    },
+
     NavToogle : function () {
           $('.Mobile-Nav').slideToggle('fast');
     }
@@ -54,7 +59,7 @@ export default {
   left: 0px;
   width: 100%;
   color: #e6e6e6;
-  z-index: 1000000;
+  z-index: 100;
 }
 .Logo-Box i {
   font-size: 60px;
