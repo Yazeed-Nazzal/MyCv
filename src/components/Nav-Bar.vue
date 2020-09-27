@@ -14,7 +14,7 @@
             <li @click="Open('.Resume')" class="" style="cursor: pointer">Resume</li>
             <li class="">Portfolio</li>
             <li class="">Blog</li>
-            <li class="">Contact</li>
+            <li @click="Open('.Contact')" style="cursor: pointer">Contact</li>
           </ul>
         </div>
         <div  id="Menu-Button" class="Mobile-Menu">
@@ -26,7 +26,7 @@
             <li @click="Open('.Resume')"  style="cursor: pointer">Resume</li>
             <li class="">Portfolio</li>
             <li class="">Blog</li>
-            <li style="margin-bottom: 0px" >Contact</li>
+            <li @click="Open('.Contact')" style="margin-bottom: 0px" >Contact</li>
           </ul>
         </div>
       </div>

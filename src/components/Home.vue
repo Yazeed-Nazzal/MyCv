@@ -1,6 +1,6 @@
 <template>
   <section class="Home">
-    <div class="Opacity-box">
+    <div  class="Opacity-box">
       <div class="container text-center h-100">
         <div class="row h-100 d-flex align-items-center justify-content-center">
           <div class="col Navi text-center">
