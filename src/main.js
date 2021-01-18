@@ -7,7 +7,8 @@ import 'popper.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-
+import Particles from "particles.vue";
+Vue.use(Particles);
 Vue.config.productionTip = false;
 
 new Vue({

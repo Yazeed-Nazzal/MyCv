@@ -1,6 +1,6 @@
 <template>
   <section class="Home">
-    <div  class="Opacity-box">
+    <div class="Opacity-box">
       <div class="container text-center h-100">
         <div class="row h-100 d-flex align-items-center justify-content-center">
           <div class="col Navi text-center">
@@ -42,16 +42,13 @@
         </div>
       </div>
     </div>
+    <particles></particles>
   </section>
 </template>
-
 <script>
 import $ from "jquery";
 export default {
-  methods: {
-
-
-  },
+  methods: {},
   mounted() {
     setInterval(function() {
       $(".Animated-span").animate({ width: "0px" }, 1250, function() {
@@ -70,7 +67,7 @@ export default {
 </script>
 <style>
 .Home {
-  background-image: url("../assets/home.jpg");
+  background-image: url("../assets/shapelined-K9QHL52rE2k-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;

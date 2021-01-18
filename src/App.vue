@@ -5,12 +5,10 @@
     <about></about>
     <Resume></Resume>
     <contact></contact>
-
   </div>
 </template>
 
 <script>
-
 import NavBar from "@/components/Nav-Bar";
 import Home from "@/components/Home";
 import About from "@/components/About";
@@ -24,7 +22,6 @@ export default {
     About,
     Home,
     NavBar
-
   }
 };
 </script>
@@ -33,10 +30,10 @@ export default {
 * {
   font-family: Poppins;
 }
-*::selection
-{
+*::selection {
   color: #f0f0f0;
   background: #009e66;
 }
+/* ---- reset ---- */
 
 </style>

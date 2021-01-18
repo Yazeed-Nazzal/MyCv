@@ -115,6 +115,7 @@
 
 <script>
 import $ from "jquery";
+
 export default {
   props: {},
   methods: {
@@ -140,24 +141,30 @@ export default {
   z-index: -9999;
   overflow-y: scroll;
 }
+
 .About::-webkit-scrollbar {
   width: 10px;
   background-color: #111;
 }
+
 .About::-webkit-scrollbar-thumb {
   background-color: #222;
 }
+
 .P1 {
   color: #9f9f9f;
   font-size: 15px;
 }
+
 .About-me {
   font-weight: 700;
   font-size: 45px;
 }
+
 .About-Header {
   margin-top: 70px;
 }
+
 .Loader {
   width: 80px;
   height: 4px;
@@ -165,6 +172,7 @@ export default {
   margin: 10px auto;
   position: relative;
 }
+
 .Loader span {
   position: absolute;
   left: 10px;
@@ -177,6 +185,7 @@ export default {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 @keyframes Loder-span {
   0% {
     left: -10px;
@@ -185,12 +194,14 @@ export default {
     left: 80px;
   }
 }
+
 .My-Img {
   padding: 40px;
-  background-image: url("../assets/info-img.jpg");
+  background-image: url("../assets/me.jpg");
   background-size: cover;
   background-position: center;
 }
+
 .My-Info-h4 {
   color: #009e66;
   font-weight: 500;
@@ -209,11 +220,13 @@ export default {
   line-height: 30px;
   margin-bottom: 30px;
 }
+
 .h-r {
   width: 100%;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.08);
 }
+
 .Personal-info {
   padding-top: 20px;
   margin-bottom: 30px;
@@ -229,6 +242,7 @@ export default {
   margin-left: 10px;
   font-size: 15px;
 }
+
 .email {
   color: #009e66;
 }
@@ -246,6 +260,7 @@ export default {
   height: 2px;
   border-radius: 2px;
 }
+
 .Social-list li a {
   color: #dadada;
   font-size: 20px;
@@ -254,6 +269,7 @@ export default {
 .Social-list li a:hover {
   color: #009e66;
 }
+
 .Download-CV {
   background-color: #009e66;
   outline: none;
@@ -264,34 +280,41 @@ export default {
   color: white;
   font-size: 14px;
 }
+
 @media only screen and (max-width: 720px) {
   .My-Img {
-    margin: 10px 170px;
+    margin: 10px 120px;
     height: 180px;
     border-radius: 100%;
   }
+
   .Download-CV {
     padding-top: 20px;
     margin-bottom: 20px;
   }
+
   .Social-list li {
     margin-left: 10px;
   }
 }
+
 .Exit {
   position: absolute;
   top: 25px;
   right: 70px;
   font-size: 30px;
 }
+
 .INfo {
   padding-left: 60px;
 }
+
 .Services-Box {
   background-color: #161616;
   padding: 30px;
   margin-left: 10px;
 }
+
 .Services-Box h2 {
   color: #f3f3f3;
   font-size: 20px;
@@ -299,16 +322,17 @@ export default {
   letter-spacing: -0.5px;
   margin-bottom: 14px;
 }
+
 .Services-Icon {
   color: #009e66;
   font-size: 58px;
 }
+
 .shadow-S {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-
 }
+
 .Services-Box:hover {
   border-bottom: 3px #009e66 solid;
-
 }
 </style>

@@ -76,19 +76,19 @@
         <div class="col-12 col-md-6" style="margin-bottom: 40px">
           <div class="Progress-Info d-flex justify-content-between">
             <span>Vue.js</span>
-            <span>60%</span>
+            <span>80%</span>
           </div>
           <div class="progress" style="background-color: #2f2f2f; height: 9px">
-            <div class="progress-bar " role="progressbar" style="width: 60%; background-color: #009e66" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar " role="progressbar" style="width: 80%; background-color: #009e66" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="col-12 col-md-6" style="margin-bottom: 40px">
           <div class="Progress-Info d-flex justify-content-between">
             <span>Laravel</span>
-            <span>60%</span>
+            <span>70%</span>
           </div>
           <div class="progress" style="background-color: #2f2f2f; height: 9px">
-            <div class="progress-bar " role="progressbar" style="width: 60%; background-color: #009e66" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar " role="progressbar" style="width: 70%; background-color: #009e66" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="col-12 col-md-6" style="margin-bottom: 40px">
