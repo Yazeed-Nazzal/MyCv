@@ -16,15 +16,14 @@
         <div class="col-lg-8" style="padding-left: 60px">
           <h4 class="My-Info-h4">Who am i?</h4>
           <p class="My-Info-P">
-            I'm Emma Smith, a visual UX/UI Designer and Web Developer
+            I'm yazeed nazal, a full-stake Web Developer
           </p>
           <p class="My-Info-P2">
-            I am a freelancer based in the United Kingdom and i have been
-            building noteworthy UX/UI designs and websites for years, which
-            comply with the latest design trends. I help convert a vision and an
-            idea into meaningful and useful products. Having a sharp eye for
-            product evolution helps me prioritize tasks, iterate fast and
-            deliver faste
+            I am a freelancer based in the Jordan and i have been building
+            noteworthy Web Developer for years, which comply with the latest
+            programming techniques. I help convert a vision and an idea into
+            meaningful and useful products. Having a sharp eye for product
+            evolution helps me prioritize tasks, iterate fast and deliver fast
           </p>
           <p class="h-r"></p>
           <div class="row Personal-info ">
@@ -36,7 +35,7 @@
             </div>
             <div class="col-12 col-md-6">Age:<span class="data">21</span></div>
             <div class="col-12 col-md-6">
-              From:<span class="data">palestine qalqilya</span>
+              From:<span class="data">Jordan amman</span>
             </div>
           </div>
           <div class="My-Info-End d-block d-sm-flex mt-3">
@@ -85,7 +84,9 @@
               <p class="Services-Icon"><i class="fab fa-laravel"></i></p>
               <h2>Web Development</h2>
               <p style="font-size: 14px; color: #9f9f9f">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Building personal web pages or for your own business and
+                building comprehensive web applications with the latest
+                technologies.
               </p>
             </div>
           </div>
@@ -94,7 +95,8 @@
               <p class="Services-Icon"><i class="fas fa-arrows-alt"></i></p>
               <h2>Fully Responsive</h2>
               <p style="font-size: 14px; color: #9f9f9f">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Building web pages and applications so that they respond and
+                work on all screens of different sizes and dimensions.
               </p>
             </div>
           </div>
@@ -103,7 +105,8 @@
               <p class="Services-Icon"><i class="fas fa-hands-helping"></i></p>
               <h2>Customer Support</h2>
               <p style="font-size: 14px; color: #9f9f9f">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Helping customers to host their sites after construction and
+                providing after-sales services.
               </p>
             </div>
           </div>
@@ -313,6 +316,7 @@ export default {
   background-color: #161616;
   padding: 30px;
   margin-left: 10px;
+  height: 323px;
 }
 
 .Services-Box h2 {

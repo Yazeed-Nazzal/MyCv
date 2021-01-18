@@ -17,9 +17,9 @@
               <h3 style="font-size: 26px; margin-bottom: 20px; color: #f0f0f0">Education</h3>
               <div class="card" >
                 <div class="card-body">
-                  <h5 class="card-title">Computer Science</h5>
+                  <h5 class="card-title"> BA of Computer Science</h5>
                   <h6 class="card-subtitle mb-2 text-muted">world islamic sciences and education university   2017 - 2021</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">GPA : 3.47</p>
                 </div>
                 <i class="fas fa-arrow-right Card-icon"></i>
               </div>
@@ -32,7 +32,7 @@
               <div class="card-body">
                 <h5 class="card-title">Web Development</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Freelancer 2018 </h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Learning to build web applications starting from 2017</p>
               </div>
               <i class="fas fa-arrow-right Card-icon"></i>
             </div>

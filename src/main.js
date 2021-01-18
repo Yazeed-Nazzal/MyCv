@@ -7,8 +7,8 @@ import 'popper.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import Particles from "particles.vue";
-Vue.use(Particles);
+import emailjs from 'emailjs-com';
+Vue.use(emailjs);
 Vue.config.productionTip = false;
 
 new Vue({

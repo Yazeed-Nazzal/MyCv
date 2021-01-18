@@ -17,14 +17,15 @@
         <div class="col-lg-7">
           <div>
             <h4 style="margin-bottom: 22px; color: #f0f0f0">Message Me</h4>
-            <form action="/">
+            <div>
               <div class="row">
                 <div class="col-12 col-md-6 mb-3">
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control"
-                      id="Name"
+                      class="form-control "
+                      id="sender"
+                      v-model="sender"
                       placeholder="Name"
                       autocomplete="off"
                     />
@@ -36,7 +37,8 @@
                       type="text"
                       class="form-control "
                       id="Email"
-                      placeholder="Name"
+                      v-model="email"
+                      placeholder="email"
                       autocomplete="off"
                     />
                   </div>
@@ -47,6 +49,7 @@
                       type="test"
                       class="form-control"
                       id="subject"
+                      v-model="subject"
                       autocomplete="off"
                       placeholder="Subject"
                     />
@@ -58,6 +61,7 @@
                       class="form-control"
                       id="Message"
                       rows="5"
+                      v-model="message"
                       placeholder="Message"
                       style="height: auto"
                     ></textarea>
@@ -65,33 +69,54 @@
                 </div>
                 <div class="col-12 mb-3">
                   <div class="form-group">
-                    <button class="d-inline-block Download-CV" style="height: 50px;padding: 10px 26px">Send Message</button>
+                    <button
+                      class="d-inline-block Download-CV"
+                      style="height: 50px;padding: 10px 26px"
+                      @click="sendEmail"
+                    >
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="col-lg-5">
-          <h4 style="color:#f0f0f0; line-height: 1.5;margin-bottom: 15px;font-weight: 500">Contact Info</h4>
+          <h4
+            style="color:#f0f0f0; line-height: 1.5;margin-bottom: 15px;font-weight: 500"
+          >
+            Contact Info
+          </h4>
           <p style="font-size: 15px; margin-bottom: 28px;color: #9f9f9f">
             Always available for freelance work if the right project comes
             along, Feel free to contact me!
           </p>
           <div class="row">
-            <div class="col-2" style="border-right: solid 2px rgba(255,255,255,.15) ">
-                <ul>
-                    <li class="Contact-Icon mb-3 "><i class="fas fa-address-card"></i></li>
-                  <li class="Contact-Icon mb-4 "><i class="fas fa-map-marked-alt"></i></li>
-                  <li class="Contact-Icon mb-3 "><i class="fas fa-phone-alt"></i></li>
-                  <li class="Contact-Icon mb-3 "><i class="fas fa-envelope"></i></li>
-                </ul>
+            <div
+              class="col-2"
+              style="border-right: solid 2px rgba(255,255,255,.15) "
+            >
+              <ul>
+                <li class="Contact-Icon mb-3 ">
+                  <i class="fas fa-address-card"></i>
+                </li>
+                <li class="Contact-Icon mb-4 ">
+                  <i class="fas fa-map-marked-alt"></i>
+                </li>
+                <li class="Contact-Icon mb-3 ">
+                  <i class="fas fa-phone-alt"></i>
+                </li>
+                <li class="Contact-Icon mb-3 ">
+                  <i class="fas fa-envelope"></i>
+                </li>
+              </ul>
             </div>
             <div class="col-10">
-                <ul class="mb-4">
-                  <li class="First-li">Name</li>
-                  <li class="Secund-Li">Yazeed Nazzal</li>
-                </ul>
+              <ul class="mb-4">
+                <li class="First-li">Name</li>
+                <li class="Secund-Li">Yazeed Nazzal</li>
+              </ul>
               <ul>
                 <li class="First-li">Location</li>
                 <li class="Secund-Li">Ammman / Jordan</li>
@@ -101,11 +126,10 @@
                 <li class="Secund-Li">+962798289659</li>
               </ul>
               <ul>
-                <li class="First-li">Email Me</li>
+                <li class="First-li">Mail Me</li>
                 <li class="Secund-Li">Yazeed_Nazal@hotmail.com</li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
@@ -115,13 +139,43 @@
 
 <script>
 import $ from "jquery";
+import emailjs from "emailjs-com";
 
 export default {
+  data() {
+    return {
+      sender: "",
+      subject: "",
+      message: "",
+      email: ""
+    };
+  },
   methods: {
     Exit() {
       $(".Contact").css("opacity", "0");
       $(".Contact").css("z-index", "-9999");
       $(".Home").css("z-index", "9999");
+    },
+    sendEmail() {
+      if (this.message != "" && this.subject != "" && this.sender != "") {
+        emailjs.send(
+          "service_g392gsb",
+          "template_3un34hn",
+          {
+            from_name: this.sender,
+            subject: this.subject,
+            message: this.message,
+            email: this.email
+          },
+          "user_76zNDx2Vpl1Gy8lvZzIWr"
+        );
+
+        // Reset form field
+        this.sender = "";
+        this.subject = "";
+        this.message = "";
+        this.email = "";
+      }
     }
   },
   props: {}
@@ -188,30 +242,26 @@ export default {
   background-color: #161616;
   border-bottom: 2px solid #009e66;
 }
-.Contact ul
-{
+.Contact ul {
   list-style: none;
   padding: 0px;
 }
-.Contact-Icon
-{
-color: #009e66;
+.Contact-Icon {
+  color: #009e66;
   font-size: 33px;
   padding: 0px;
 }
-.First-li{
+.First-li {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 0;
   color: #f0f0f0;
 }
-.Secund-Li
-{
+.Secund-Li {
   color: #9f9f9f;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
-
 }
 </style>
