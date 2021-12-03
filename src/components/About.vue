@@ -19,11 +19,12 @@
             I'm yazeed nazal, a full-stake Web Developer
           </p>
           <p class="My-Info-P2">
-            I am a freelancer based in the Jordan and i have been building
-            noteworthy Web Developer for years, which comply with the latest
-            programming techniques. I help convert a vision and an idea into
-            meaningful and useful products. Having a sharp eye for product
-            evolution helps me prioritize tasks, iterate fast and deliver fast
+            Junior full-stack web developer able to build a web systems from the ground up -
+            from backend, UI, and web APIs, also building web systems using the SPA concept
+            Skilled at writing well-design, efficient code using current best practice in web
+            development, fast learner, hard worker, and team player who proficient in a set of
+            scripting languages for web development and always abreast of developments in
+            web applications and programming languages.
           </p>
           <p class="h-r"></p>
           <div class="row Personal-info ">
@@ -33,33 +34,41 @@
             <div class="col-12 col-md-6">
               Eamil:<span class="data email">Yazeed_nazal@hotmail.com</span>
             </div>
-            <div class="col-12 col-md-6">Age:<span class="data">21</span></div>
+            <div class="col-12 col-md-6">Age:<span class="data">22</span></div>
             <div class="col-12 col-md-6">
               From:<span class="data">Jordan amman</span>
             </div>
           </div>
           <div class="My-Info-End d-block d-sm-flex mt-3">
-            <button class="d-inline-block Download-CV">Download CV</button>
+            <button class="d-inline-block Download-CV"><a style="color: #fff"
+                                                          href="https://drive.google.com/file/d/1QNSd4AYzCA17Lvx4QBwljPx_GyUolUXu/view?usp=sharing">Download
+              CV</a></button>
             <ul class="d-flex Social-list ">
               <li class="p-md-2 ml-4">
                 <a href="https://www.facebook.com/yazeed.nazal" target="_blank"
-                  ><i class="fab fa-facebook-square"></i
+                ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
               <li class="p-md-2">
                 <a href="https://twitter.com/yazeed67981083" target="_blank"
-                  ><i class="fab fa-twitter"></i
+                ><i class="fab fa-twitter"></i
                 ></a>
               </li>
               <li class="p-md-2">
                 <a href="https://github.com/Yazeed-Nazzal" target="_blank"
-                  ><i class="fab fa-github-square"></i
+                ><i class="fab fa-github-square"></i
                 ></a>
               </li>
               <li class="p-md-2">
                 <a href="https://wa.me/0798289659" target="_blank"
-                  ><i class="fab fa-whatsapp"></i
+                ><i class="fab fa-whatsapp"></i
                 ></a>
+              </li>
+              <li class="p-md-2">
+                <a href="linkedin.com/in/yazeed-nazzal-55264a1b8" target="_blank"
+                ><i class="fab fa-linkedin"></i
+                >
+                </a>
               </li>
             </ul>
           </div>
@@ -73,8 +82,8 @@
           Services i offer to my clients
         </p>
         <h1
-          class="mb-4"
-          style="font-size: 38px; font-weight: 700; color: #f0f0f0;"
+            class="mb-4"
+            style="font-size: 38px; font-weight: 700; color: #f0f0f0;"
         >
           My Services
         </h1>
@@ -200,7 +209,7 @@ export default {
 
 .My-Img {
   padding: 40px;
-  background-image: url("../assets/me.jpg");
+  background-image: url("../assets/yazeed-Nazal.png");
   background-size: cover;
   background-position: center;
 }

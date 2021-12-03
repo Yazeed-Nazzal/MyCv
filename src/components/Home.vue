@@ -38,6 +38,13 @@
                 ><i class="fab fa-whatsapp"></i
               ></a>
             </li>
+            <li class="p-md-2">
+              <a href="linkedin.com/in/yazeed-nazzal-55264a1b8" target="_blank"
+              ><i class="fab fa-linkedin"></i
+              >
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
